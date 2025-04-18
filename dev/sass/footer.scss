@@ -1,7 +1,9 @@
-footer{
-    height: 100px;
-    background: $bg-footer;
-    margin-top: auto;
+.footer{
+    &-nav{
+        display: flex;
+    }
+
 }
+
 
  
