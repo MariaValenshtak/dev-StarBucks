@@ -1,6 +1,6 @@
 @media screen and (max-width: 1024px) {
     .header {
-        padding: 34px 0;
+        padding: 35px 0;
         .container {
             gap: 0;
         }
@@ -17,6 +17,7 @@
 
     .logo {
         max-width: 114px;
+        margin: 2px 0 0 0;
     }
  
    .mobile-container{
@@ -33,13 +34,66 @@
     padding-right: 25px;
    }
 
+   .btn.btn-arrow{
+    padding: 10px;
+    --size:56px;
+    --icon-size:23px;
+    --border-radius:18px;
+   }
 
 
    .footer {
+    padding: 21px 0 10px;
        .logo {
         max-width: 134px;
     }
-   }
+    &-row:first-child{
+        flex-wrap: wrap;
+        gap: 36px;
+        align-items: center;
+        margin-bottom: 36px;
+     
+    }
+    &-nav{
+        --gap:36px;
+        order: 1;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: var(--gap);
+        padding: 4px 0 0 0;
+        gap: 0 12px;
+
+        &__title{
+            font-size: 15px;
+        }
+        &__link{
+            font-size: 15px;
+        }
+
+        &__item:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    &-telephone{
+        font-size: 16px;
+    }
+    &-instagram{
+        max-width: 32px;
+    }
 }
+    .btn.btn-arrow{
+        margin-left: auto;
+    }
+}
+
+
+
+   
+
+
+
+
 
 

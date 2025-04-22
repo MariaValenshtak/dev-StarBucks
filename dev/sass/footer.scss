@@ -1,6 +1,6 @@
 .footer{
     position: relative;
-    padding: 38px 0;
+    padding: 40px 0;
     margin-top: auto;
     overflow: hidden;
     &:before{
@@ -16,7 +16,7 @@
     &-row{
         display: flex;
         &:first-child{
-            margin-bottom: 88px;
+            margin-bottom: 66px;
             align-items: flex-start;
         }
         &:last-child{
@@ -29,7 +29,7 @@
         margin: 0 auto;
         width: 785px;
         gap: 24px;
-        padding: 0 12px;
+        padding: 7px 5px;
         justify-content: space-between;
         &__title{
             font-size: 20px;
@@ -60,6 +60,7 @@
 
   .logo{
     position: relative;
+    padding-top: 4px;
     &:before{
       content:"";
       @include transform-centered;
