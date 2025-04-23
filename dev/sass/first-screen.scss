@@ -1,4 +1,20 @@
 .banner{
+    .container{
+       display: flex;
+       justify-content: space-between;
+       gap: 36px;
+    }
+     
+    &-img{
+        padding: 12px;
+        position: relative;
+        .label{
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+
     .template-title{
         h1{
             display: flex;
@@ -7,5 +23,21 @@
     }
     .btn-row{
         margin-bottom: 50px;
+    }
+
+    &-advantages{
+        display: flex;
+        gap: 46px;
+    }
+
+    &-advantage{
+        width: 126px;
+    }
+
+    &-advantage__title{
+        font-size: 62px;
+    }
+    &-advantage__description{
+        font-size: 20px;
     }
 }
