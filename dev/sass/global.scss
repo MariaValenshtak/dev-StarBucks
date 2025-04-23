@@ -89,6 +89,71 @@ a {
     }
 }
 
+.btn-row{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.btn{
+    border-radius: 82px;
+    padding: 20.5px 53px;
+    font-size: 24px;
+    display: inline-block;
+    transition: .2s;
+    position: relative;
+    &:before{
+        content: "";
+        @include transform-centered;
+        width: 0;
+        height: 0;
+        transition: .2s;
+        background: url(./assets/img/template-decoration_green.png) center/contain no-repeat;
+        z-index: -1;
+    }
+
+    &:not(.btn-arrow){
+        &:hover{
+      color: $color-title;
+        &:before{
+            width: 350px;
+            height: 350px;
+        }
+    }
+
+    }
+    &.btn-primary{
+        background-image: $bg-gradient;
+        font-weight: 600;
+        color: $color-title;
+    }
+    &.btn-secondary{
+        background-color: $bg-body;
+        font-weight: 400;
+        color: $color-text;
+        &:before{
+            background: url(./assets/img/template-decoration_white.png) center/contain no-repeat;
+        }
+
+        &:after{
+            content: "";
+            @include transform-centered;
+            background: linear-gradient(173deg, #dadada 0%, rgba(218, 218, 218, 0) 100%);
+            width: calc(100% + 3px);
+            height: calc(100% + 3px);
+            z-index: -1;
+            border-radius: 82px;
+        }
+    }
+
+    &.btn-sm{
+        font-size: 18px;
+        font-weight: 600;
+        padding: 16px 35px;
+    }
+}
+
 .btn-arrow{
     --size: 87px;
     --icon-size:35px;
