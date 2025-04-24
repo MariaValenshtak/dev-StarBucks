@@ -1,5 +1,10 @@
 .header {
     padding: 48px 0;
+    z-index: 1;
+    backdrop-filter: blur(5px);
+    background-color: #12151785;
+    width: 100%;
+    position: fixed;
     .container {
         // margin-left: 130px;
         --gap: 94px;
