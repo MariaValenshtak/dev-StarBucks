@@ -1,0 +1,58 @@
+.advantages{
+    box-shadow: 0 25px 51px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient(230deg, #fff 3.94%, #e5e5e5 64.08%, #fbfbfb 88.62%);
+    border-radius: 46px;
+    padding: 38px 78px;
+    max-width: 962px;
+    margin: 0 auto $section-margin;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    .label {
+        position: absolute;
+        top: -40px;
+        left: -19px;
+    }
+}
+
+.advantage{
+    width: 228px;
+    text-align: center;
+    &-title{
+        color: $bg-body;
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    
+    &-description{
+        color: #282B2D;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 163.5%;
+    }
+    
+    &-img{
+        --size:148px;
+        width: var(--size);
+        height: var(--size);
+        background-image: $bg-gradient;
+        border-radius: 50%;
+        box-shadow: 0 4px 41px 0 #00000063;
+        margin: 0 auto 12px;
+        position: relative;
+        img{
+            --size: 180px;
+            width: var(--size);
+            height: var(--size);
+            min-width: var(--size);
+            object-fit: contain;
+            @include transform-centered;
+        }
+    }
+    
+}
+
+
+
