@@ -1,0 +1,15 @@
+
+
+
+.we-make__video{
+    position: relative;
+    .btn{
+        position: absolute;
+        @include transform-centered;
+        width: max-content;
+    }
+    img{
+        mask: url(./assets/img/we-make___cooking-mask.png) no-repeat;
+    }
+}
+

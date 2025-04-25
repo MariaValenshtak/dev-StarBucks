@@ -104,6 +104,10 @@ a {
     display: inline-block;
     transition: .2s;
     position: relative;
+    svg{
+        max-width: 28px;
+        max-height: 28px;
+    }
     &:before{
         content: "";
         @include transform-centered;
@@ -224,6 +228,7 @@ a {
 }
 
 .icon-svg{
+    vertical-align: middle;
     height: var(--icon-size);
     width: var(--icon-size);
 }
