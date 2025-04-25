@@ -91,6 +91,26 @@
 
 .advantages{
     margin: 0 25px $section-margin;
+    padding: 36px 48px;
+    gap: 24px;
+}
+
+.advantage-img {
+    --size: 116px;
+}
+
+.advantage-img {
+    img {
+        --size: 138px;
+    }
+}
+
+.advantage-description {
+    font-size: 17px;
+}
+
+.advantage-title {
+    font-size: 26px;
 }
 
    .footer {

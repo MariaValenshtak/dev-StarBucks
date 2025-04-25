@@ -33,6 +33,36 @@
 
     }
 
+    .advantages {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 26px;
+        max-width: 260px;
+        margin: 0 auto $section-mobile-margin;
+        padding: 32px 42px;
+    }
+
+    .advantage-img {
+        --size: 86px;
+        width: var(--size);
+        height: var(--size);
+        img{
+            --size: 104px;
+            width: var(--size);
+            height: var(--size);
+        }
+    }
+
+    .advantage-title {
+        font-size: 22px;
+    }
+    
+    .advantage-description {
+        font-size: 14px;
+        max-width: 150px;
+        margin: 0 auto;
+    }
+
     .label {
         --size: 82px;
         font-size: 18px;    
