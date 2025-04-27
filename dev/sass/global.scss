@@ -222,6 +222,17 @@ a {
     }
 }
 
+.hovered{
+   animation: 1s hovered infinite ease-in-out alternate;
+}
+
+@keyframes hovered {
+    to{
+        transform: scale(1.2);
+    }
+
+}
+
 .banner-advantage__description{
     display: flex;
     flex-direction: column;
