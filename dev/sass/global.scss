@@ -171,6 +171,7 @@ a {
     padding: 25px;
     position: relative;
     @include flex-centered;
+    margin-left: auto;
 
     &:before {
         content: "";

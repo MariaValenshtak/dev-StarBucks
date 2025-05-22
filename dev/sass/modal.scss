@@ -9,11 +9,29 @@
     backdrop-filter: blur(8px);
     @include flex-centered;
     display: none;
+      overflow: auto;
     &-body {
         background-color: #121517a1;
         max-width: 700px;
         padding: 36px 24px;
         position: relative;
+        border-radius: 24px;
+    }
+    &.modal-video{
+        .custom-video{
+            max-height: calc(100vh - 200px);
+          
+        }
+        .modal-body{
+            max-width: 767px;
+            background-color: transparent;
+        }
+        .btn-close{
+    top: 47px;
+    right: 47px;
+   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' viewBox='0 0 23 24' fill='none'%3E%3Cpath d='M21 2L2 22.5' stroke='black' stroke-width='3'/%3E%3Cpath d='M2 2L21 22.5' stroke='black' stroke-width='3'/%3E%3C/svg%3E") center no-repeat;
+
+}
     }
 }
 
@@ -21,9 +39,8 @@
     position: absolute;
     top: 16px;
     right: 16px;
-    background-color: aqua;
     padding: 24px;
-    background: url(./assets/img/close.svg) center no-repeat;
+   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='24' viewBox='0 0 23 24' fill='none'%3E%3Cpath d='M21 2L2 22.5' stroke='white' stroke-width='3'/%3E%3Cpath d='M2 2L21 22.5' stroke='white' stroke-width='3'/%3E%3C/svg%3E") center no-repeat;
     &:hover{
         transform: rotate(360deg) scale(1.2);
     }
