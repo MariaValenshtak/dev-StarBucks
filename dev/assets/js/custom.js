@@ -25,19 +25,24 @@ const swiper = new Swiper('.swiper-product', {
 
    breakpoints: {
     // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 48,
     },
     // when window width is >= 480px
-    480: {
+    651: {
+      slidesPerView: 2,
+      spaceBetween: 48,
+    },
+
+    1025: {
       slidesPerView: 3,
-      spaceBetween: 30
+      spaceBetween: 48,
     },
     // when window width is >= 640px
-    640: {
+    1500: {
       slidesPerView: 4,
-      spaceBetween: 40
+      spaceBetween: 48,
     }
   }
 

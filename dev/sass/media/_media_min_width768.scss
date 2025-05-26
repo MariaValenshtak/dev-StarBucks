@@ -2,5 +2,12 @@
     .advantage{
         width: 228px;
     }
-
 }
+
+@media screen and (min-width: 651px) {
+    .swiper-container{
+        position: relative;
+        width: 548px;
+    }
+}
+

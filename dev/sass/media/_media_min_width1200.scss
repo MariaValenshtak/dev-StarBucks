@@ -1,3 +1,17 @@
 @media (min-width: 1200px) {
 
 }
+
+@media (min-width: 1500px) {
+    .swiper-container{
+        width: 1278px;
+    }
+
+    .swiper-button-next {
+    right: -106px;
+}
+
+.swiper-button-prev {
+    left: -106px;
+}
+}

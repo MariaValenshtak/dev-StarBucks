@@ -2,4 +2,32 @@
    .btn-burger{
     display: none;
    }
+    .swiper-container{
+        width: 590px;
+    }
+
+    .swiper-button-next {
+    right: -90px;
 }
+
+.swiper-button-prev {
+    left: -90px;
+}
+}
+
+@media (min-width: 1125px) {
+    .swiper-container{
+        width: 890px;
+    }
+
+    .swiper-button-next {
+    right: -90px;
+}
+
+.swiper-button-prev {
+    left: -90px;
+}
+}
+
+
+
