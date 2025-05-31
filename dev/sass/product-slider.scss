@@ -79,3 +79,7 @@
         transform: rotate(90deg);
     }
 }
+
+.swiper-slide-active .product {
+  border-color: $secondary-color;
+}
